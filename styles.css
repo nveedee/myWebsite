@@ -1,0 +1,72 @@
+/* Globale Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #202633; /* Dunkelblau */
+}
+
+header {
+    background-color: #333741; /* Dunkelgrau */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    display: grid; /* Grid-Layout verwenden */
+    grid-template-columns: 1fr 1fr; /* Zwei Spalten, jeweils gleich groß */
+    gap: 20px; /* Abstand zwischen den Blog-Fenstern */
+}
+
+footer {
+    background-color: #333741; /* Dunkelgrau */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Stile für die Blog-Fenster */
+.blog-card {
+    background-color: #657496; /* Blaugrau */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten für einen 3D-Effekt */
+}
+
+.blog-card h2 {
+    color: #ffffff; /* Blau */
+}
+
+.blog-card p {
+    color: #ffffff; /* Dunkelgrau für den Inhalt */
+}
+
+/* Stile für die aktive Seite */
+nav ul li a.active {
+    font-weight: bold; /* Fett markieren */
+}
